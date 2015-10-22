@@ -14,3 +14,7 @@ You can access settings menu by clicking on tray icon. There you can choose devi
 # Disable trackpad
 
 You can turn on trackpad disabling when external mouse is present in **Accessibility** - **Mouse & Trackpad** - **Ignore built-in trackpad when mouse or wireless trackpad is present**.
+
+# Media keys on external keyboard
+
+You can use **Karabiner** to bind F1-F12 keys do exactly the same things as internal keys do.
