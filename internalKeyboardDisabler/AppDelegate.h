@@ -11,7 +11,7 @@
 #import "libusb.h"
 #import "pwd.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSTableViewDelegate, NSWindowDelegate>
 @property IBOutlet NSMutableArray *usbDevices;
 @property NSDictionary *trackedDevice;
 

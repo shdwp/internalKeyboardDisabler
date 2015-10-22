@@ -23,11 +23,13 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [self checkPrivilegedUser];
 
+
     // intit
     libusb_context *context;
     libusb_init(&context);
+    self.window.delegate = self;
     self.runUIUpdates = malloc(sizeof(BOOL));
-    *self.runUIUpdates = YES;
+    *self.runUIUpdates = NO;
 
     // persistence
     self.trackedDevice = [NSKeyedUnarchiver unarchiveObjectWithFile:[self persistenceFile]];
@@ -48,6 +50,7 @@
                     [self.arrayController rearrangeObjects];
                 }];
                 [self focusOnTrackedDevice];
+                NSLog(@"uiupdate");
             }
 
             [NSThread sleepForTimeInterval:1.0];
@@ -79,12 +82,8 @@
     [self enableInternalKeyboard:YES];
 }
 
-- (void) applicationWillHide:(NSNotification *)notification {
+- (void) windowWillClose:(NSNotification *)notification {
     *self.runUIUpdates = NO;
-}
-
-- (void) applicationWillUnhide:(NSNotification *)notification {
-    *self.runUIUpdates = YES;
 }
 
 #pragma mark - persistence
@@ -191,7 +190,8 @@
 }
 
 - (void) toggleHiddenAction {
-    self.window.isVisible = !self.window.isVisible;
+    self.window.isVisible = YES;
+    *self.runUIUpdates = YES;
 }
 
 - (void) quitAction {

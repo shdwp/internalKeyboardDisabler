@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	# automator tracks background processes spawned by himself, we can trick it by using applescript		do shell script "sudo /Applications/internalKeyboardDisabler.app/Contents/MacOS/internalKeyboardDisabler &gt; /dev/null 2&gt; /tmp/iDV.output &amp;"	return inputend run</string>
+					<string>on run {input, parameters}	# automator tracks background processes spawned by himself, we can trick it by using applescript		tell application "Terminal" to do script "sudo echo 1; exit"	do shell script "sudo /Applications/internalKeyboardDisabler.app/Contents/MacOS/internalKeyboardDisabler &gt; /dev/null 2&gt; /tmp/iDV.output &amp;"	return inputend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
