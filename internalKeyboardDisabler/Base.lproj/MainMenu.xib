@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="arrayController" destination="ZOR-fY-6dp" id="5FS-DR-z8S"/>
+                <outlet property="tableView" destination="sSt-Z2-puC" id="QuR-GE-GtA"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="internalKeyboardDisabler" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="internalKeyboardDisabler" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About internalKeyboardDisabler" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Quit internalKeyboardDisabler" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="internalKeyboardDisabler" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="335" y="390" width="460" height="199"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
+            <view key="contentView" id="EiT-Mj-1SZ">
+                <rect key="frame" x="0.0" y="0.0" width="460" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE4-b5-MMF">
+                        <rect key="frame" x="8" y="8" width="444" height="161"/>
+                        <clipView key="contentView" id="Xs1-NR-APM">
+                            <rect key="frame" x="1" y="1" width="442" height="159"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowSizeStyle="automatic" viewBased="YES" id="sSt-Z2-puC">
+                                    <rect key="frame" x="0.0" y="0.0" width="442" height="159"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn identifier="" editable="NO" width="434" minWidth="10" maxWidth="434" id="CSv-7O-RLE">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="hng-iF-aCX">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <connections>
+                                                <binding destination="ZOR-fY-6dp" name="value" keyPath="arrangedObjects.description" id="yTu-9W-9qS">
+                                                    <dictionary key="options">
+                                                        <bool key="NSContinuouslyUpdatesValue" value="YES"/>
+                                                    </dictionary>
+                                                </binding>
+                                            </connections>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <connections>
+                                        <binding destination="ZOR-fY-6dp" name="content" keyPath="arrangedObjects" id="uIF-yr-MPy"/>
+                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="9so-oZ-2iS"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <animations/>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="FJ1-km-Okt">
+                            <rect key="frame" x="1" y="144" width="442" height="16"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="BCE-GH-HIN">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <animations/>
+                        </scroller>
+                    </scrollView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZIt-KP-0ge">
+                        <rect key="frame" x="6" y="177" width="114" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="sf9-2f-QdY"/>
+                            <constraint firstAttribute="width" constant="110" id="t5f-bY-nLc"/>
+                        </constraints>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Tracked device:" id="8zT-08-Mt2">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FKL-3V-cw7">
+                        <rect key="frame" x="124" y="177" width="330" height="17"/>
+                        <animations/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="–" id="uHO-Pq-sgc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="Voe-Tx-rLC" name="value" keyPath="self.trackedDevice.description" id="bMm-Cf-QA6"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EE4-b5-MMF" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="8" id="4Vc-Kk-mu2"/>
+                    <constraint firstItem="FKL-3V-cw7" firstAttribute="leading" secondItem="ZIt-KP-0ge" secondAttribute="trailing" constant="8" id="ILo-xb-TTS"/>
+                    <constraint firstItem="EE4-b5-MMF" firstAttribute="top" secondItem="FKL-3V-cw7" secondAttribute="bottom" constant="8" id="XCf-Fk-ZEn"/>
+                    <constraint firstItem="ZIt-KP-0ge" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="5" id="XS9-uj-DPd"/>
+                    <constraint firstAttribute="trailing" secondItem="EE4-b5-MMF" secondAttribute="trailing" constant="8" id="Ztj-35-ezL"/>
+                    <constraint firstItem="FKL-3V-cw7" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="5" id="bFL-u3-u3g"/>
+                    <constraint firstAttribute="bottom" secondItem="EE4-b5-MMF" secondAttribute="bottom" constant="8" id="bwk-eI-Sww"/>
+                    <constraint firstAttribute="trailing" secondItem="FKL-3V-cw7" secondAttribute="trailing" constant="8" id="oCP-oA-5Om"/>
+                    <constraint firstItem="ZIt-KP-0ge" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="8" id="xpd-4b-gmI"/>
+                </constraints>
+                <animations/>
+            </view>
+            <point key="canvasLocation" x="318" y="278.5"/>
+        </window>
+        <arrayController id="ZOR-fY-6dp">
+            <connections>
+                <binding destination="Voe-Tx-rLC" name="contentArray" keyPath="usbDevices" id="snh-Rh-28S"/>
+            </connections>
+        </arrayController>
+        <userDefaultsController representsSharedInstance="YES" id="I10-JM-o71"/>
+    </objects>
+</document>

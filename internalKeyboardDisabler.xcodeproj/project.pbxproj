@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F30683361BD9056000C0185B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F30683351BD9056000C0185B /* AppDelegate.m */; };
+		F30683391BD9056000C0185B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F30683381BD9056000C0185B /* main.m */; };
+		F306833B1BD9056000C0185B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F306833A1BD9056000C0185B /* Assets.xcassets */; };
+		F306833E1BD9056000C0185B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F306833C1BD9056000C0185B /* MainMenu.xib */; };
+		F30683481BD920E000C0185B /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F30683471BD920E000C0185B /* libusb-1.0.0.dylib */; };
+		F306834E1BD93F5300C0185B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F306834C1BD93F5300C0185B /* Security.framework */; };
+		F306834F1BD93F5300C0185B /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F306834D1BD93F5300C0185B /* SecurityFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F30683311BD9056000C0185B /* internalKeyboardDisabler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = internalKeyboardDisabler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30683341BD9056000C0185B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F30683351BD9056000C0185B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F30683381BD9056000C0185B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F306833A1BD9056000C0185B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F306833D1BD9056000C0185B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F306833F1BD9056000C0185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30683471BD920E000C0185B /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libusb-1.0.0.dylib"; path = "../../../../../usr/local/Cellar/libusb/1.0.19/lib/libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		F306834C1BD93F5300C0185B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F306834D1BD93F5300C0185B /* SecurityFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SecurityFoundation.framework; path = System/Library/Frameworks/SecurityFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F306832E1BD9056000C0185B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F306834E1BD93F5300C0185B /* Security.framework in Frameworks */,
+				F306834F1BD93F5300C0185B /* SecurityFoundation.framework in Frameworks */,
+				F30683481BD920E000C0185B /* libusb-1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F30683281BD9056000C0185B = {
+			isa = PBXGroup;
+			children = (
+				F306834C1BD93F5300C0185B /* Security.framework */,
+				F306834D1BD93F5300C0185B /* SecurityFoundation.framework */,
+				F30683471BD920E000C0185B /* libusb-1.0.0.dylib */,
+				F30683331BD9056000C0185B /* internalKeyboardDisabler */,
+				F30683321BD9056000C0185B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F30683321BD9056000C0185B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F30683311BD9056000C0185B /* internalKeyboardDisabler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F30683331BD9056000C0185B /* internalKeyboardDisabler */ = {
+			isa = PBXGroup;
+			children = (
+				F30683341BD9056000C0185B /* AppDelegate.h */,
+				F30683351BD9056000C0185B /* AppDelegate.m */,
+				F306833A1BD9056000C0185B /* Assets.xcassets */,
+				F306833C1BD9056000C0185B /* MainMenu.xib */,
+				F306833F1BD9056000C0185B /* Info.plist */,
+				F30683371BD9056000C0185B /* Supporting Files */,
+			);
+			path = internalKeyboardDisabler;
+			sourceTree = "<group>";
+		};
+		F30683371BD9056000C0185B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F30683381BD9056000C0185B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F30683301BD9056000C0185B /* internalKeyboardDisabler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F30683421BD9056000C0185B /* Build configuration list for PBXNativeTarget "internalKeyboardDisabler" */;
+			buildPhases = (
+				F306832D1BD9056000C0185B /* Sources */,
+				F306832E1BD9056000C0185B /* Frameworks */,
+				F306832F1BD9056000C0185B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = internalKeyboardDisabler;
+			productName = internalKeyboardDisabler;
+			productReference = F30683311BD9056000C0185B /* internalKeyboardDisabler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F30683291BD9056000C0185B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = shdwprince;
+				TargetAttributes = {
+					F30683301BD9056000C0185B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = F306832C1BD9056000C0185B /* Build configuration list for PBXProject "internalKeyboardDisabler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F30683281BD9056000C0185B;
+			productRefGroup = F30683321BD9056000C0185B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F30683301BD9056000C0185B /* internalKeyboardDisabler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F306832F1BD9056000C0185B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F306833B1BD9056000C0185B /* Assets.xcassets in Resources */,
+				F306833E1BD9056000C0185B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F306832D1BD9056000C0185B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F30683391BD9056000C0185B /* main.m in Sources */,
+				F30683361BD9056000C0185B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F306833C1BD9056000C0185B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F306833D1BD9056000C0185B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F30683401BD9056000C0185B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F30683411BD9056000C0185B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F30683431BD9056000C0185B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = internalKeyboardDisabler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libusb/1.0.19/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shdwprince.internalKeyboardDisabler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libusb/1.0.19/include/libusb-1.0";
+			};
+			name = Debug;
+		};
+		F30683441BD9056000C0185B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = internalKeyboardDisabler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/libusb/1.0.19/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = net.shdwprince.internalKeyboardDisabler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/libusb/1.0.19/include/libusb-1.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F306832C1BD9056000C0185B /* Build configuration list for PBXProject "internalKeyboardDisabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30683401BD9056000C0185B /* Debug */,
+				F30683411BD9056000C0185B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F30683421BD9056000C0185B /* Build configuration list for PBXNativeTarget "internalKeyboardDisabler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F30683431BD9056000C0185B /* Debug */,
+				F30683441BD9056000C0185B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F30683291BD9056000C0185B /* Project object */;
+}
