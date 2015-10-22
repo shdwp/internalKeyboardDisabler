@@ -21,7 +21,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    //[self checkPrivilegedUser];
+    [self checkPrivilegedUser];
 
     // intit
     libusb_context *context;
