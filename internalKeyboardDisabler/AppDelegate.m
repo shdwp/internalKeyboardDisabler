@@ -23,7 +23,6 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [self checkPrivilegedUser];
 
-
     // intit
     libusb_context *context;
     libusb_init(&context);
@@ -50,7 +49,6 @@
                     [self.arrayController rearrangeObjects];
                 }];
                 [self focusOnTrackedDevice];
-                NSLog(@"uiupdate");
             }
 
             [NSThread sleepForTimeInterval:1.0];
@@ -139,12 +137,14 @@
 
 // called in background thread
 - (void) trackedDeviceConnected {
+    [NSThread sleepForTimeInterval:2.0];
     [self enableInternalKeyboard:NO];
     [self updateMenuForConnectedDevice];
 }
 
 // called in background thread
 - (void) trackedDeviceDisconnected {
+    [NSThread sleepForTimeInterval:2.0];
     [self enableInternalKeyboard:YES];
     [self updateMenuForDisconnectedDevice];
 }
