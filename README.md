@@ -1,3 +1,5 @@
+***Karabiner Elements is out for Sierra, meaning that you don't have to use this anymore.***
+
 Small tool which disables internal laptop keyboard when external one is presented.
 
 # Installation
